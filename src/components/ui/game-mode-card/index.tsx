@@ -13,7 +13,7 @@ export const GameModeCard = ({
     <motion.div
       whileTap={{ scale: 0.95 }}
       className={cn(
-        "flex items-center relative border-8 border-primary-900 bg-primary-800 rounded-4xl p-6 text-lg text-left",
+        "flex items-center relative border-8 border-primary-900 bg-primary-800 rounded-4xl p-6 text-left",
         imagePosition === "left" && "pl-20",
         imagePosition === "right" && "pr-20",
         className
