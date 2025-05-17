@@ -28,6 +28,7 @@ export const GameModesPage = () => {
       >
         <p>
           Checho está enojado, demuestra que puedes ganarle!
+          <br />
           <b className="inline-flex gap-2">
             Hardcore Mode <FireIcon />
           </b>
