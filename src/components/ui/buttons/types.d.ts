@@ -1,3 +1,5 @@
+import type { HTMLMotionProps } from "motion/react";
+
 type ButtonClassNames = {
   /**
    * The button class name.
@@ -13,9 +15,7 @@ type ButtonClassNames = {
   loadingSpinner: React.ButtonHTMLAttributes<HTMLDivElement>["className"];
 };
 
-export type ButtonProps = Omit<
-  React.ButtonHTMLAttributes<HTMLButtonElement>
-> & {
+export type ButtonProps = Partial<HTMLMotionProps<"button">> & {
   /**
    * Ref to the DOM node.
    */
@@ -39,6 +39,11 @@ export type ButtonProps = Omit<
    * @default false
    */
   isLoading?: boolean;
+  /**
+   * Indicates when the button is has only an icon with transparent background.
+   * @default false
+   */
+  isIconOnly?: boolean;
   /**
    * Indicates whether the button is in an inactive state.
    * @default false

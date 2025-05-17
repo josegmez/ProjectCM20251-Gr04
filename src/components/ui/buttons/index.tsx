@@ -9,7 +9,7 @@ const colorMappingClass: Record<NonNullable<ButtonProps["color"]>, string> = {
   danger: "bg-red-600 text-white",
 };
 
-const Button = ({
+export const Button = ({
   children,
   className,
   classNames,
@@ -40,7 +40,7 @@ const Button = ({
         <span
           className={cn(
             "flex items-center justify-center",
-            isDisabled && "text-gray-400 dark:text-gray-600",
+            isDisabled && "text-gray-400",
             classNames?.startContent
           )}
         >
@@ -55,5 +55,3 @@ const Button = ({
     </motion.button>
   );
 };
-
-export default Button;

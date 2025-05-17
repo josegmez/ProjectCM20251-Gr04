@@ -1,6 +1,7 @@
+import { useNavigate } from "react-router";
+
 import { GameModeCard } from "@/components/ui/game-mode-card";
 import { FireIcon } from "@/components/ui/icons";
-import { useNavigate } from "react-router";
 
 export const GameModesPage = () => {
   const navigate = useNavigate();
@@ -30,7 +31,10 @@ export const GameModesPage = () => {
           Checho está enojado, demuestra que puedes ganarle!
           <br />
           <b className="inline-flex gap-2">
-            Hardcore Mode <FireIcon />
+            Hardcore Mode{" "}
+            <span className="text-fire-red">
+              <FireIcon />
+            </span>
           </b>
         </p>
       </GameModeCard>
