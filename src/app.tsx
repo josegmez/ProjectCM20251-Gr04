@@ -1,3 +1,10 @@
+import { AppRoutes } from "@/components/controllers/app-routes";
+import { GlobalProviders } from "@/contexts/global-providers";
+
 export const App = () => {
-  return <h1>My App</h1>;
+  return (
+    <GlobalProviders>
+      <AppRoutes />
+    </GlobalProviders>
+  );
 };
