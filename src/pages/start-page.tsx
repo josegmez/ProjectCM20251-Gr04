@@ -5,14 +5,14 @@ import { useNavigate } from "react-router";
 export const StartPage = () => {
   const navigate = useNavigate();
 
-  function handleTouchEnd() {
+  function handleClick() {
     navigate("/game-modes");
   }
 
   return (
     <div
       className="flex flex-col items-center justify-center flex-1 gap-24"
-      onTouchEnd={handleTouchEnd}
+      onClick={handleClick}
     >
       <h1 className="text-6xl font-secondary">Categorías</h1>
       <div className="flex items-center justify-center rounded-full size-64 border-[32px] border-primary-900 bg-primary-800">
